@@ -1,0 +1,35 @@
+{
+	"name": "gl小说网"，
+	"url": "http://www.gaola520.com"，
+	"version": 100,
+
+	
+	//基础信息
+	"search": {
+		"url": "http://www.gaola520.com/book/search?keyword=${key}",
+		"charset": "utf-8",
+		"list": "div.1 rank > div.item",
+		"name": "dt",
+		"detail": "dt > a",
+	},
+
+
+    //图书详情
+    "detail": {
+        "name": "h1",
+        "catalog": ".list",
+    },
+
+	//目录
+	"catalog": {
+		"list": ".list > dd",
+		"orderby": 0,
+		"name": "a",
+		"chapter": "a",
+	},
+
+	//正文
+	"chapter": {
+		"content": ".content > p",
+	},
+}
